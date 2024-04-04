@@ -92,8 +92,8 @@ namespace OOP4Belovol
 
             double sumBeforeMin = array.Take(Array.IndexOf(array, minElement)).Sum();
 
-            double[] evenElements = array.Where((x, i) => i % 2 != 0).OrderBy(x => x).ToArray();
-            double[] oddElements = array.Where((x, i) => i % 2 == 0).OrderBy(x => x).ToArray();
+            double[] evenElements = array.Where((x, i) => i % 2 == 0).OrderBy(x => x).ToArray();
+            double[] oddElements = array.Where((x, i) => i % 2 != 0).OrderBy(x => x).ToArray();
 
             labelResultArray1.Text = $"Добуток додатних елементів: {positiveProduct}\n" +
                           $"Сума елементів до мінімального: {sumBeforeMin}\n" +
